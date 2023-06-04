@@ -6,64 +6,81 @@
   <title>Maldena | Home</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 <body>
-  <header>
+  <header id="myHeader">
     <nav>
       <ul>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="places.html">Places to Visit</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="places.html">Places to Visit</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <!-- li defines a list item and ul means unordered list--> 
     </nav>
   </header>
   
   <main>
     <section>
       <div id="weather" class="weather-container"></div>
+     <!-- class is often used to point to a class name in a style sheet.
+      It can also be used by a JavaScript to access and manipulate elements with the specific class name. -->
+    <!-- id is used to specify a unique id for an HTML element.
+    You cannot have more than one element with the same id in an HTML document
+    A Class name can be used by multiple HTML elements, while an ID name must only be 
+    used by one HTML element within the page.-->
     </section>
     <section class="welcome">
-      <div class="overlay">
-        <h2>Welcome to Maldena</h2>
-        <p>Discover the beauty and charm of our historic neighborhood.</p>
+      <div class="welcomeoverlay">
+        <div class="welcomeoverlay-content">
+          <h2>Welcome to Maldena</h2>
+          <p>Discover the beauty and charm of our historic neighborhood.</p>
+        </div>
       </div>
       <img src="images/garden-party.jpg" alt="Garden Party">
     </section>
     
-    <section class="about">
+    <section class="about1">
       <h2>About Maldena</h2>
-      <p>Maldena is a charming neighborhood in Tartu, Estonia, known for its historic wooden houses and winding streets. With its vibrant community feel and cultural events, it's a great place to visit for tourists and locals alike.</p>
+      <p id="dynamicText">Maldena is a charming neighborhood in Tartu, Estonia, known for its historic wooden houses and winding streets. With its vibrant community feel and cultural events, it's a great place to visit for tourists and locals alike.</p>
       <a href="about.html" class="btn">Discover More</a>
     </section>
-    
     
     <section class="events">
       <h2>Upcoming Events</h2>
       <ul class="event-list">
         <li>
-          <div class="event-item">
-            <h3>Local Street Market</h3>
-            <p>Shop local vendors and artisans at our monthly street market, held on the first Sunday of every month.</p>
-            <a href="#" class="btn">Learn More</a>
-            <img src="images/market.jpg" alt="Local street market" />
-          </div>
+          <h3>Local Street Market</h3>
+          <p>Date: June 11, 2023</p>
+          <p>Location: Kalevi 7</p>
+          <div class="image-overlay">
+            <img src="images/market.jpg" alt="Street Market" />
+            <div class="overlay-content">
+              <h3>Local Street Market</h3>
+              <p>Open every Sunday 10:00 AM - 3:00 PM.</p>
+              <p> Fresh fruit, vegetables, used clothes, toys etc.</p>
+            </div>
         </li>
+
         <li>
-          <div class="event-item">
+          <h3>Fast Food Truck</h3>
+          <p>Date: June 19, 2023</p>
+          <p>Location: In front of Tähe Mini Rimi</p>
+          <div class="image-overlay">
+          <img src="images/foodtruck.jpg" alt="Foodtruck">
+          <div class="overlay-content">
             <h3>Fast Food Truck</h3>
-            <p>This month we will be served traditional American fast food. Come join!</p>
-            <a href="#" class="btn">Learn More</a>
-            <img src="images/foodtruck.jpg" alt="Fast food truck" />
+            <p>Coming Monday the 19th! This time Jack will be serving us fabulous American fast food.</p>
+            <p>Be there or be square!</p>
           </div>
         </li>
       </ul>
+      <a href="events.html" class="btn">See More Events</a>
     </section>
-    
     
     <section class="places-to-visit">
       <h2>Places to Visit</h2>
@@ -71,23 +88,37 @@
         <li>
           <h3>Maldena Park </h3>
           <p>Enjoy a scenic hike up Maldena Park for stunning views of Maldena and Tartu.</p>
-          <img src="images/park.jpg" alt="Park" />
+          <div class="image-overlay">
+            <img src="images/park.jpg" alt="Park" />
+            <div class="overlay-content">
+              <h3>Maldena Park</h3>
+              <p>This gorgeous park has a pond, a children's play area and a bike track.</p>
+            </div>
+          </div>
         </li>
         <li>
           <h3>Cafe Mal</h3>
           <p>Stop by Cafe Mal for delicious coffee, pastries, and sandwiches.</p>
-          <img src="images/cafe.jpg" alt="Cafe" />
+          <div class="image-overlay">
+            <img src="images/cafe.jpg" alt="Cafe" />
+            <div class="overlay-content">
+              <h3>Cafe Mal</h3>
+              <p>Opening Times:</p>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p>Saturday: 9:00 AM - 5:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
         </li>
+        
       </ul>
-      <a href="places.html" class="btn">See More</a>
+      <a href="places.html" class="btn">See More Places</a>
     </section>
   </main>
   
   <footer>
-    <p>&copy; 2023 Maldena. All rights reserved.</p>
+    <p>&copy; 2023 Maldena.</p>
   </footer>
-  <script src="script.js"></script>
-  
 </body>
 </html>
 

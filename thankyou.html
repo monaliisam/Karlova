@@ -4,52 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="places.html">Places to Visit</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="places.html">Places to Visit</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
     <div class="thankyou-section">
       <h1>Thank you for the message!</h1>
       <p>We'll contact you as soon as possible.</p>
-      <p>In the meanwhile, check out these cool upcoming events:</p>
+      <p>In the meantime, check out these cool events:</p>
     </div>
+
     <section class="events">
-        <ul class="event-list">
-          <li>
-            <div class="event-item">
-              <h3>Local Street Market</h3>
-              <p>Shop local vendors and artisans at our monthly street market, held on the first Sunday of every month.</p>
-              <a href="#" class="btn">Learn More</a>
-              <img src="images/market.jpg" alt="Local street market" />
+      <ul class="event-list">
+        <li>
+          <h3>Recycling Lecture</h3>
+          <p>Date: June 20, 2023, 6:00 PM</p>
+          <p>Location: Maldena High School</p>
+          <div class="image-overlay">
+            <img src="images/lecture.jpg" alt="Recycling Lecture">
+            <div class="overlay-content">
+              <h3>Recycling Lecture</h3>
+              <p>Still don't know where your empty milk carton goes?</p>
+              <p>No worries! Meet us at the Maldena High School to learn more about recycling!</p>
             </div>
-          </li>
-          <li>
-            <div class="event-item">
-              <h3>Fast Food Truck</h3>
-              <p>This month we will be served traditional American fast food. Come join!</p>
-              <a href="#" class="btn">Learn More</a>
-              <img src="images/foodtruck.jpg" alt="Fast food truck" />
+          </div>
+        </li>
+        <li>
+          <h3>Playground Opening</h3>
+          <p>Date: June 25, 2023, 1:00 PM</p>
+          <p>Location: Maldena Park</p>
+          <div class="image-overlay">
+            <img src="/images/playground.jpg" alt="Playground">
+            <div class="overlay-content">
+              <h3>Playground Opening</h3>
+              <p>The long-awaited playground will finally be opened!</p>
+              <p>Get your kids and let's celebrate with an ice cream party!</p>
             </div>
-          </li>
-        </ul>
-      </section>
+          </div>
+        </li>
+      </ul>
+      <a href="events.html" class="btn">See More Events</a>
+    </section>
   </main>
+
   <footer>
-    <p>&copy; 2023 Maldena. All rights reserved.</p>
-</footer>
+    <p>&copy; 2023 Maldena.</p>
+  </footer>
 </body>
 </html>
