@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Barlow', sans-serif;
     background-color: #e1eed1;
     color: #444;
   }
@@ -7,19 +7,19 @@ body {
   header {
     background-color: #8f9779;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
   }
   
   nav ul {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
   
   nav li {
@@ -41,14 +41,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center; 
+    margin-top: 0px;
     padding: 20px;
   }
   
   article {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     max-width: 400px;
@@ -62,6 +63,17 @@ body {
   
   article p {
     line-height: 1.5;
+  }
+  
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .contact-content {
+    flex: 1;
+    margin-bottom: 20px;
   }
   
   footer {
@@ -87,6 +99,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    padding: 30px;
   }
   
   .overlay h2 {
@@ -110,9 +123,14 @@ body {
     z-index: -1;
   }
   
-  /* Upcoming Events Section */
   .events {
-    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .events h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
   }
   
   .events h2 {
@@ -132,7 +150,7 @@ body {
   .events li {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     max-width: 400px;
@@ -140,7 +158,7 @@ body {
   }
   
   .events li h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
   }
   
@@ -168,5 +186,146 @@ body {
   
   .events li a:hover {
     background-color: #6c7357;
+  }
+  
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .places-to-visit {
+    margin-top: 1px;
+  }
+  
+  .places-to-visit h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .places-to-visit ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .places-to-visit li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: justify;
+  }
+  
+  .places-to-visit li h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .places-to-visit li p {
+    line-height: 1.5;
+  }
+  
+  .places-to-visit li a {
+    background-color: #8f9779;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .places-to-visit li a:hover {
+    background-color: #6c7357;
+  }
+  
+  .places-to-visit li img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .weather-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .about h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  .btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #8f9779;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #6c7357;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    
+    header {
+      padding: 10px 0;
+    }
+    
+    nav ul {
+      justify-content: center;
+      margin-right: 0;
+    }
+    
+    main {
+      padding: 10px;
+    }
+    
+    article {
+      max-width: 100%;
+      margin: 10px;
+    }
+    
+    .overlay {
+      padding: 20px;
+    }
+    
+    .events li,
+    .places-to-visit li {
+      max-width: 100%;
+      margin: 10px;
+    }
+    
+    .about h2 {
+      font-size: 24px;
+    }
+    
+    .about h1 {
+      font-size: 32px;
+    }
   }
   

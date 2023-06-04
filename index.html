@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Karlova | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldena | Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -20,6 +24,9 @@
   </header>
   
   <main>
+    <section>
+      <div id="weather" class="weather-container"></div>
+    </section>
     <section class="welcome">
       <div class="overlay">
         <h2>Welcome to Maldena</h2>
@@ -31,26 +38,27 @@
     <section class="about">
       <h2>About Maldena</h2>
       <p>Maldena is a charming neighborhood in Tartu, Estonia, known for its historic wooden houses and winding streets. With its vibrant community feel and cultural events, it's a great place to visit for tourists and locals alike.</p>
-      <a href="#" class="btn">Discover More</a>
+      <a href="about.html" class="btn">Discover More</a>
     </section>
+    
     
     <section class="events">
       <h2>Upcoming Events</h2>
       <ul class="event-list">
         <li>
           <div class="event-item">
-            <h3>Summer Festival</h3>
-            <p>Join us for our annual Summer Festival on July 15th. Enjoy live music, food, and drinks in the heart of Karlova.</p>
+            <h3>Local Street Market</h3>
+            <p>Shop local vendors and artisans at our monthly street market, held on the first Sunday of every month.</p>
             <a href="#" class="btn">Learn More</a>
-            <img src="images/street.jpg" alt="Local streets" />
+            <img src="images/market.jpg" alt="Local street market" />
           </div>
         </li>
         <li>
           <div class="event-item">
-            <h3>Street Market</h3>
-            <p>Shop local vendors and artisans at our monthly street market, held on the first Sunday of every month.</p>
+            <h3>Fast Food Truck</h3>
+            <p>This month we will be served traditional American fast food. Come join!</p>
             <a href="#" class="btn">Learn More</a>
-            <img src="images/market.jpg" alt="Local street market" />
+            <img src="images/foodtruck.jpg" alt="Fast food truck" />
           </div>
         </li>
       </ul>
@@ -63,19 +71,22 @@
         <li>
           <h3>Maldena Park </h3>
           <p>Enjoy a scenic hike up Maldena Park for stunning views of Maldena and Tartu.</p>
+          <img src="images/park.jpg" alt="Park" />
         </li>
         <li>
-          <h3>Barlova</h3>
+          <h3>Cafe Mal</h3>
           <p>Stop by Cafe Mal for delicious coffee, pastries, and sandwiches.</p>
+          <img src="images/cafe.jpg" alt="Cafe" />
         </li>
       </ul>
-      <a href="#" class="btn">See More</a>
+      <a href="places.html" class="btn">See More</a>
     </section>
   </main>
   
   <footer>
-    <p>&copy; 2023 Maldena | All rights reserved.</p>
+    <p>&copy; 2023 Maldena. All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
   
 </body>
 </html>
